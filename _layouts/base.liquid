@@ -1,0 +1,42 @@
+<!-- _layouts/base.liquid-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is not coming from the page using this layout -->
+    <title>{{ title }}</title>
+	<meta name="description" content="{{ description }}" />
+
+	<!-- Reassure the browser that we are mobile-friendly -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="True">
+
+	<!-- Favicons -->
+	<link rel="icon" href="/assets/favicon/favicon.ico">
+	<link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" sizes="any">
+	<link rel="apple-touch-icon" href="/assets/favicon/apple.png">
+	<meta name="theme-color" content="#203038">
+	<link rel="manifest" href="/assets/manifest.json">
+
+	<!-- Meta Tags for Social Media Platforms -->
+	<meta property="og:url" content="{{ page.url }}" />
+	<meta property="og:site_name" content="2002 Honda Civic SI - $3500" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:description" content="{{ description }}" />
+	<meta property="og:image" content="https://civic.thisanimus.com/assets/img/og.jpg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+	<main>
+    	{{ content }}
+	</main>
+	{% include scripts %}
+</body>
+</html>

@@ -1,0 +1,81 @@
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	@include lg-and-up {
+		height: auto;
+	}
+	picture {
+		flex-grow: 1;
+		display: block;
+		height: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	figcaption {
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}
+}
+.hero {
+	img {
+		height: 60rem;
+	}
+}
+
+.caption-bottom {
+	figcaption {
+		bottom: 0;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		background-image: linear-gradient(rgba($color-dark, 0), rgba($color-dark, 1));
+		padding: $space-xl $space-md $space-md $space-md;
+	}
+}
+
+.caption-top {
+	figcaption {
+		top: 0;
+		background-image: linear-gradient(rgba(#fff, 1), rgba(#fff, 0));
+		padding: $space-lg $space-lg 20rem $space-lg;
+	}
+}
+.section-intro {
+	min-height: 60rem;
+}
+
+.highlight {
+	border-left: 1rem solid $color-primary;
+	padding-left: $space-md;
+}
+.red-s {
+	color: $color-primary;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+	margin: $space-md 0 0 0;
+	@extend %flat-list;
+	@include md-and-up {
+		margin: 0 0 0 $space-md;
+		min-width: 35ch;
+		width: 30%;
+	}
+}
+li.feature {
+	flex-grow: 1;
+	border-top: 1rem solid $color-primary;
+	padding: $space-md;
+	background: $color-dark;
+	&:not(:last-child) {
+		margin-bottom: $space-md;
+	}
+}

@@ -1,0 +1,10 @@
+.callout{
+    font-size:1.25em;
+    text-align:center;
+    background:saturate(darken($color-primary, 10%), 10%);
+    background: linear-gradient(20deg, saturate(darken($color-primary, 20%), 15%) 0%, $color-primary 100%);
+    padding:$space-lg;
+    .container{
+        max-width:60ch;
+    }
+}

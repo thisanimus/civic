@@ -1,0 +1,21 @@
+.media-item{
+	@include md-and-up{
+		padding:$space-xl $space-lg;
+		display:flex;
+	}
+}
+
+.media-item-media{
+	@include md-and-up{
+		min-width:40%;
+	}
+
+}
+
+.media-item-text{
+	padding:$space-md;
+	@include md-and-up{
+		padding:0 0 0 $space-lg;
+	}
+
+}

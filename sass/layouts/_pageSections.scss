@@ -1,0 +1,15 @@
+.section-marquis {
+	padding: $space-md;
+	@include md-and-up {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.text-block {
+	padding: $space-md;
+}
+
+#about {
+	background: linear-gradient(45deg, #ccc 0%, #ffffff 100%);
+}

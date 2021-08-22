@@ -1,0 +1,24 @@
+{
+	"name": "2002 Honda Civic SI - $3500",
+	"short_name": "2002 Honda Civic SI - $3500",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/index.html",
+	"background_color": "#d32f2f",
+	"theme_color": "#d32f2f",
+	"description": "5-speed manual transmission, fun hatchback for sale. Clean title, no accidents.",
+	"icons": [
+		{
+			"src": "/assets/favicon/favicon-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/assets/favicon/favicon-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	]
+}

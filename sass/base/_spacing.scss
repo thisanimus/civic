@@ -1,0 +1,108 @@
+
+// Spacing
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+$space-xl: 6rem;
+$space-page: 8rem;
+$border-width:2px;
+
+.container{
+    max-width:50em;
+    margin:0 auto;
+}
+
+dd,
+dt,
+li,
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul,
+fieldset,
+input,
+select,
+textarea {
+	margin-bottom: $space-md;
+}
+
+$menu-height:4em;
+
+$breakpoint-tiny: 400px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 769px;
+$breakpoint-lg: 1025px;
+$breakpoint-xl: 1280px;
+
+.container-sm {
+	width: 100%;
+	margin: 0 auto;
+	max-width: $breakpoint-sm;
+	position: relative;
+}
+
+.container-md {
+	width: 100%;
+	margin: 0 auto;
+	max-width: $breakpoint-md;
+	position: relative;
+
+}
+
+.container-lg {
+	width: 100%;
+	margin: 0 auto;
+	max-width: $breakpoint-lg;
+	position: relative;
+}
+
+.container-xl {
+	width: 100%;
+	margin: 0 auto;
+	max-width: $breakpoint-xl;
+	position: relative;
+}
+
+@mixin tiny {
+    @media (max-width: #{$breakpoint-tiny}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: #{$breakpoint-sm}) {
+        @content;
+    }
+}
+
+@mixin sm-and-up {
+    @media (min-width: #{$breakpoint-sm}) {
+        @content;
+    }
+}
+
+@mixin md-and-up {
+    @media (min-width: #{$breakpoint-md}) {
+        @content;
+    }
+}
+
+@mixin lg-and-up {
+    @media (min-width: #{$breakpoint-lg}) {
+        @content;
+    }
+}
+
+@mixin xl-and-up {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}

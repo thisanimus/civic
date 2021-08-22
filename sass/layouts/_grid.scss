@@ -1,0 +1,43 @@
+.grid{
+	display:grid;
+	width:100%;
+	padding:$space-xs;
+	grid-template-columns: 1fr;
+	grid-gap:$space-xs;
+
+	@include md-and-up{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	img{
+		width:100%; 
+		height:100%;
+		object-fit:cover;
+
+	}
+	figure{
+		height:100%;
+	}
+}
+.two-up{
+	min-height:20em;
+	height:100%;
+	display:grid;
+	grid-gap:$space-xs;
+	grid-template-columns:1fr 1fr;
+}
+
+.full{
+	grid-column: span 2;
+}
+.tall{
+	min-height:30em;
+}
+.half{
+	grid-column: span 2;
+	@include md-and-up{
+		grid-column: span 1;
+	}
+}
+
+

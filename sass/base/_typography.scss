@@ -1,0 +1,140 @@
+
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+b,
+strong {
+	font-weight: bold;
+}
+
+p {
+	color:var(--color-text);
+	margin-top: 0;
+   margin-bottom:1.25rem;
+
+}
+em{
+	font-style:italic;
+}
+
+
+p:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+	font-weight:700;
+	color:var(--color-heading);
+	margin:0 0 $space-sm 0;
+}
+
+h1 {
+	font: 900 6rem/1 'Lato';
+	a{font-weight:700;}
+}
+
+h2 {
+	font: 900 4rem/1.1 'Lato';
+	a{font-weight:700;}
+}
+
+h3 {
+	font: 700 3rem/1.2 'Lato';
+	a{font-weight:700;}
+}
+
+h4 {
+	font-size: 2.4rem;
+	line-height: 1.35;
+}
+
+h5 {
+	font-size: 2.0rem;
+	line-height: 1.4;
+}
+
+h6 {
+	font-size: 1.6rem;
+	letter-spacing: 0;
+	line-height: 1.4;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+ul + p,
+ol + p {
+	margin-top:$space-sm;
+}
+
+ul + h1,
+ul + h2,
+ul + h3,
+ol + h1,
+ol + h2,
+ol + h3,
+p + h1,
+p + h2,
+p + h3,
+a + h1,
+a + h2,
+a + h3,
+ul + h4,
+ul + h5,
+ul + h6,
+ol + h4,
+ol + h5,
+ol + h6,
+p + h4,
+p + h5,
+p + h6{
+	margin-top:$space-lg;
+}
+
+sup{
+	vertical-align:super;
+	font-size:.7em;
+}
+ul{
+  list-style-type:disc;
+  margin-left:2rem;
+  li{
+  	margin-bottom:1rem;
+  }
+}
+
+ol{
+  list-style-type:decimal;
+  margin-left:2rem;
+  li{
+  	margin-bottom:1rem;
+  }
+}
+
+p{
+	line-height:1.5;
+	margin:0 0 .75em 0;
+}
+
+ion-icon{
+	vertical-align:-.15em;
+}
+.semibold{
+	font-weight:600;
+}
